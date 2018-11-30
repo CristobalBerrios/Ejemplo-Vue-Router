@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import Posts from './components/Posts'
+import Hellow from './components/HelloWorld'
 
 Vue.use(Router)
 
@@ -10,8 +12,18 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
+      name: 'Ejemplo vue-router',
       component: Home
+    },
+    {
+      path: '/posts',
+      name: 'Posts',
+      component: Posts
+    },
+    {
+      path: '/comentarios/:id',
+      name: 'Comentarios',
+      component: Hellow
     },
     {
       path: '/about',

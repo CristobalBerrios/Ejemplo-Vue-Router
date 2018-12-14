@@ -16,6 +16,11 @@ export default new Router({
       component: Home
     },
     {
+      path: '/index.html',
+      name: 'Ejemplo vue-router',
+      component: Home
+    },
+    {
       path: '/posts',
       name: 'Posts',
       component: Posts
